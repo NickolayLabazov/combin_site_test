@@ -1,12 +1,22 @@
-###Тестовое задание
+# Тестовое Задание
 
-#Для тестирования использовался JSON-server.
+## Порядок запуска:
+
+* Клонировать Back-end: https://github.com/NickolayLabazov/postLine-server; 
+* В папке с Back-end выполнить "npm install";
+* В папке с Back-end выполнить "npm run watch" для запуска;
+* Клонировать Front-end;
+* В папке с Front-end выполнить "npm install";
+* В папке с Front-end выполнить "npm run start" для запуска;
+
+### Тестовое задание
+
+# Для тестирования использовался JSON-server. </br>
 Установка JSON-server: npm install -g json-server
 
-#Для запуска: 
-*клонировать репозиторий combin_site_test; 
-*открыть папку c проектом combin_site_test;
-*в папке с проектом для запуска JSON-server выполнить npm run server ;
-*войти в папку frontend: cd frontend;
-*выполнить npm install
-*выполнить npm run start
+# Для запуска: 
+* клонировать репозиторий combin_site_test; 
+* открыть папку c проектом combin_site_test;
+* в папке с проектом для запуска JSON-server выполнить npm run server ; 
+* выполнить npm install
+* выполнить npm run start
