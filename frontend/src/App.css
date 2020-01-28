@@ -1,24 +1,29 @@
 @font-face {
   font-family: 'Proxima Nova';
-  src: url(./static/font/ProximaNova-Light.eot);
-  src: url(./static/font/ProximaNova-Light.otf);
-  src: url(./static/font/ProximaNova-Light.ttf);
-  src: url(./static/font/ProximaNova-Light.woff);
-  src: url(./static/font/ProximaNova-Light.woff2);
   src: url(./static/font/ProximaNova-Regular.eot);
   src: url(./static/font/ProximaNova-Regular.otf);
   src: url(./static/font/ProximaNova-Regular.ttf);
   src: url(./static/font/ProximaNova-Regular.woff);
   src: url(./static/font/ProximaNova-Regular.woff2);
+}
+
+@font-face {
+  font-family: 'Proxima Nova Light';
+  src: url(./static/font/ProximaNova-Light.eot);
+  src: url(./static/font/ProximaNova-Light.otf);
+  src: url(./static/font/ProximaNova-Light.ttf);
+  src: url(./static/font/ProximaNova-Light.woff);
+  src: url(./static/font/ProximaNova-Light.woff2);
+}
+
+@font-face {
+  font-family: 'Proxima Nova Bold';
   src: url(./static/font/ProximaNova-Semibold.eot);
   src: url(./static/font/ProximaNova-Semibold.otf);
   src: url(./static/font/ProximaNova-Semibold.ttf);
   src: url(./static/font/ProximaNova-Semibold.woff);
   src: url(./static/font/ProximaNova-Semibold.woff2);
 }
-
-
-  
 
 body {
   font-family: 'Proxima Nova', Arial, sans-serif;
@@ -28,8 +33,7 @@ body {
   padding-left: 1.2em;
   padding-right: 1.2em;
   padding-top: 1em;
-  overflow-x: hidden; 
-  
+  overflow-x: hidden;
 }
 
 .reviews {
@@ -41,40 +45,31 @@ body {
   border-radius: 12px;
 }
 
-.reviews__visible{
+.reviews__visible {
   position: absolute;
   left: -100%;
-width: 300%;
+  width: 300%;
   display: flex;
-  /*  transition: left 1s  ease 0s; */
-} 
+}
 
-.reviews__visible_left{ 
-  position: absolute; 
+.reviews__visible_left {
+  position: absolute;
   left: -200%;
   width: 300%;
   display: flex;
-   transition: left 0.5s  ease 0s;  
+  transition: left 0.5s ease 0s;
 }
 
-.reviews__visible_right{ 
-  position: absolute;  
+.reviews__visible_right {
+  position: absolute;
   left: 0%;
   width: 300%;
   display: flex;
-   transition: left 0.3s  ease 0s;  
+  transition: left 0.3s ease 0s;
 }
 
-/* .reviews__visible:hover{
-  
-  left: -200%;
-
-  
-}  */
-
-.reviews__box{
-  
-  width: 100%; 
+.reviews__box {
+  width: 100%;
   display: flex;
 }
 
@@ -90,6 +85,7 @@ width: 300%;
 }
 
 .reviews__review {
+  font-family: 'Proxima Nova Light', Arial, sans-serif;
   line-height: normal;
   letter-spacing: 0.2px;
   margin-top: 12%;
@@ -97,13 +93,20 @@ width: 300%;
   font-size: 3.8em;
   max-height: 400px;
   overflow: hidden;
-  line-height: 120%;  
+  line-height: 130%;
 }
 
 .reviews__review_name {
+  font-family: 'Proxima Nova Bold', Arial, sans-serif;
+  font-weight: bold;
   margin-top: 2em;
   margin-left: 9%;
   font-size: 2.4em;
+}
+
+.reviews__review_username {
+  font-family: 'Proxima Nova Light', Arial, sans-serif;
+  font-weight: lighter;
 }
 
 .reviews_ring {
@@ -134,8 +137,6 @@ width: 300%;
   background-color: #7444DA;
   cursor: pointer;
 }
-
-/* ss */
 
 .reviews__buttons_button_symb {
   margin: auto;
@@ -192,18 +193,15 @@ width: 300%;
   fill: #6527D9;
 }
 
-.news__item{
+.news__item {
   color: #6527D9;
   margin-left: 10px;
   margin-top: 10px;
-
 }
 
-.news__item_link{
+.news__item_link {
   color: #262626;
   text-decoration: none;
- 
-
 }
 
 @media(min-width: 1200px) {
@@ -253,24 +251,18 @@ width: 300%;
     flex-direction: column;
     justify-content: space-arounds;
   }
- /*  .reviews__review {
-    
-  } */
   .reviews_buttons {
     left: 5%;
   }
- .main_card {
+  .main_card {
     width: 100%;
-  } 
+  }
   .reviews {
     height: 520px;
   }
 }
 
 @media(max-width: 449px) {
- /*  .main_card {
-    width: 100%;
-  } */
   .reviews_buttons {
     bottom: 5%;
     left: 5%;

@@ -114,7 +114,9 @@ function Rewievs() {
             <div className={caruselPosition.style}>
                 {reviews.map(review => <Review review={review} key={review.name} />)}
             </div>
-            <div className="reviews_buttons" >
+
+            {allReviews.length == 0 ? null :
+                <div className="reviews_buttons" >
                 <div className="reviews__buttons_button" onClick={handlerLeft}>
                     <svg className="reviews__buttons_button_symb" x="0px" y="0px" viewBox="0 0 492 492">
                         <g>
@@ -135,7 +137,8 @@ function Rewievs() {
                         </g>
                      </svg> 
                 </div>
-            </div>
+            </div>            
+            }            
         </div>
     );
 }
